@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000;
 }
 
 html,
@@ -11,12 +12,25 @@ body {
   width: 100%;
 }
 #nav {
-  height: 150px;
+  height: 80px;
   width: 100%;
-  background-color: blueviolet;
+  background-color: white;
   display: flex;
+  align-items: center;
+  padding: 0 80px;
+  gap: 60px;
+  justify-content: flex-start;
 }
 
 #nav img {
   height: 50px;
+}
+
+#logo {
+  float: left;
+}
+
+h4 {
+  text-transform: uppercase;
+  float: left;
 }
