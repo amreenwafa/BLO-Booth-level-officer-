@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #000;
+  color: #ffe8e8;
 }
 
 html,
@@ -45,10 +45,10 @@ video {
 #main {
   position: relative;
   background-color: rgba(
-    32,
-    34,
-    56,
-    0.402
+    0,
+    0,
+    0,
+    0.712
   ); /* Set the background color to view photo in an blackish way */
 }
 
@@ -57,7 +57,7 @@ video {
   width: 100%;
   position: relative;
   display: flex;
-  align-items: self-end;
+  align-items: self-start;
   justify-content: center;
   flex-direction: column;
 }
