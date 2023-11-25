@@ -57,12 +57,20 @@ video {
   width: 100%;
   position: relative;
   display: flex;
-  align-items: self-start;
+  align-items: flex-end; /* Align items to the end (bottom) of the container */
   justify-content: center;
   flex-direction: column;
+  margin-top: auto; /* Use auto margin to center vertically */
 }
 
 #page1 h1 {
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#page1 h2 {
+  font-size: 19px;
+  font-weight: 500;
+  width: 40%;
 }
