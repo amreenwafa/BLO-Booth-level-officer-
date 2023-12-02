@@ -1,80 +1,131 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #ffe8e8;
+  font-family: "Pacifico", cursive;
+  font-family: "Playfair Display", serif;
+  font-family: "Young Serif", serif;
 }
 
-html,
-body {
-  height: 100%;
+.header {
+  min-height: 100vh;
   width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./photos/new-form.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-#nav {
-  height: 80px;
-  width: 100%;
+nav {
   display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
-  justify-content: space-between; /* Use space-between to push the items to the ends */
-  z-index: 99;
-  position: fixed;
 }
 
-#nav img {
-  height: 50px;
-}
-
-#logo {
+nav img {
   height: 50px; /* Set the height of your logo */
 }
 
-h4 {
-  text-transform: uppercase;
+.nav-links {
+  flex: 1;
+  text-align: right;
 }
 
-video {
-  height: 100%;
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Set hover effect */
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
   width: 100%;
-  object-fit: cover;
-  position: fixed;
 }
 
-#main {
+.text-box {
+  width: 90%;
+  columns: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 42px;
+  color: rgb(135, 135, 166);
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
   position: relative;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.712
-  ); /* Set the background color to view photo in an blackish way */
+  cursor: pointer;
 }
 
-#page1 {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  flex-direction: column;
+.hero-btn:hover {
+  border: 1px solid #224e58;
+  background: #224e58;
+  transition: 1s;
 }
 
-#page1 h1 {
-  font-size: 50px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  position: relative;
-  color: #008ed6;
+nav .fa {
+  display: none; /* Set icon for close and menu and hide from large screen */
 }
 
-#page1 h2 {
-  font-size: 20px;
-  font-weight: 500;
-  width: 40%;
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #224e58;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
 }
-
-
-                                                           9
